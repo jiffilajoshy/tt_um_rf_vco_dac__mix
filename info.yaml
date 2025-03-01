@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "tt_um_rf_vco_dac_mix"      # Project title
+  author:       "JIFFIL A JOSHY"      # Your name
+  discord:      "jiffilajoshy"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Rf analog front end"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -25,13 +25,13 @@ project:
 pinout:
   # Inputs
   ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[1]: "VCO_DAC_LSB_1"
+  ui[2]: "VCO_DAC_2"
+  ui[3]: "VCO_DAC_3"
+  ui[4]: "VCO_DAC_4"
+  ui[5]: "VCO_DAC_5"
+  ui[6]: "VCO_DAC_6"
+  ui[7]: "VCO_DAC_7"
 
   # Outputs
   uo[0]: ""
@@ -44,22 +44,22 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
+  uio[0]: "VCO_DAC_8"
+  uio[1]: "VCO_DAC_9"
+  uio[2]: "VCO_DAC_10"
+  uio[3]: "VCO_DAC_11"
+  uio[4]: "VCO_CAP_4uf"
+  uio[5]: "VCO_CAP_1uf"
   uio[6]: ""
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
-  ua[4]: ""
-  ua[5]: ""
+  ua[0]: "RF_IN_0"
+  ua[1]: "IF_OUT_0"
+  ua[2]: "IF_OUT_90"
+  ua[3]: "RF_IN_90"
+  ua[4]: "VCO_DACOFVCO_BASE_TO_GND_THROUGH_10KOHM"
+  ua[5]: "VCO_0_OUT"
 
 # Do not change!
 yaml_version: 6
